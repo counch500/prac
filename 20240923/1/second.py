@@ -1,9 +1,9 @@
-check = 0
-while a:= int(input()):
-	if a <= 0:
+c = 0
+while a:= input():
+	if int(a) <= 0:
 		print(a)
 		break
-	check += a
-	if check > 21:
+	c += int(a)
+	if int(c) > 21:
 		print(check)
 		break
