@@ -1,3 +1,4 @@
+
 lst = list(map(int, input().split(",")))
 for i in range(len(lst)):
     for j in range(len(lst) - i - 1):

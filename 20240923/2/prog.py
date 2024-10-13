@@ -5,5 +5,5 @@ while a:= input():
 		break
 	c += int(a)
 	if int(c) > 21:
-		print(check)
+		print(c)
 		break
