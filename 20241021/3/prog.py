@@ -1,15 +1,22 @@
+import re
 from collections import Counter
 
-w = int(input())
-text = ""
-while s := input().lower():
-    text += (s + " ")
-l = len(text)
-for i in range(l):
-    if text[i] != " " and text[i].isalpha() == False:
-        text = text.replace(text[i], " ")
+W = int(input().strip())
 
-words_freq = Counter(text.split())
-words_w_freq = [word for word, cnt in words_freq.items() if cnt == w]
-print(*sorted(words_w_freq))
+lines = []
+while line := input():
+    lines.append(line)
+
+text = " ".join(lines)
+cleaned_text = re.sub(r'[^a-zA-Z\s]', ' ', text).lower()
+
+words = cleaned_text.split()
+filtered_words = [word for word in words if len(word) == W]
+
+word_count = Counter(filtered_words)
+
+if word_count:
+    max_frequency = max(word_count.values())
+    most_popular_words = [word for word, count in word_count.items() if count == max_frequency]
+    print(" ".join(sorted(most_popular_words)))
 
