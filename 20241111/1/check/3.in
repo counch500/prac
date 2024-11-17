@@ -1,0 +1,8 @@
+a = Omnibus()
+
+del a.a
+a.a = "hi"
+print(a.a)
+del a.a
+print(a.a)
+

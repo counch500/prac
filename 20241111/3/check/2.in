@@ -1,0 +1,4 @@
+m = Maze(1)
+print(m)
+print(m[0,0 : 0,0])
+
