@@ -1,0 +1,6 @@
+store 10 a
+store 5 b
+add a b c
+out c
+stop
+

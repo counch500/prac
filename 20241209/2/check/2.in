@@ -1,0 +1,6 @@
+store 10 a
+store 0 b
+div a b c
+out c
+stop
+
