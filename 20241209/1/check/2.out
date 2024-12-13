@@ -1,0 +1,29 @@
+__new__: ('C', (), {'__doc__': 'Generated class', '__annotations__': {'a': 'Var a', 'b': 'Var b', 'c': 'Var c', 'd': 'Var d', 'e': 'Var e', 'f': 'Var f', 'g': 'Var g', 'h': 'Var h', 'i': 'Var i', 'j': 'Var j', 'k': 'Var k', 'l': 'Var l', 'm': 'Var m', 'n': 'Var n', 'o': 'Var o', 'p': 'Var p', 'q': 'Var q', 'r': 'Var r', 's': 'Var s', 't': 'Var t', 'u': 'Var u', 'v': 'Var v', 'w': 'Var w', 'x': 'Var x', 'y': 'Var y', 'z': 'Var z'}, 'a': 'a', 'b': 'b', 'c': 'c', 'd': 'd', 'e': 'e', 'f': 'f', 'g': 'g', 'h': 'h', 'i': 'i', 'j': 'j', 'k': 'k', 'l': 'l', 'm': 'm', 'n': 'n', 'o': 'o', 'p': 'p', 'q': 'q', 'r': 'r', 's': 's', 't': 't', 'u': 'u', 'v': 'v', 'w': 'w', 'x': 'x', 'y': 'y', 'z': 'z'}), {}
+Generated class
+a: Var a
+b: Var b
+c: Var c
+d: Var d
+e: Var e
+f: Var f
+g: Var g
+h: Var h
+i: Var i
+j: Var j
+k: Var k
+l: Var l
+m: Var m
+n: Var n
+o: Var o
+p: Var p
+q: Var q
+r: Var r
+s: Var s
+t: Var t
+u: Var u
+v: Var v
+w: Var w
+x: Var x
+y: Var y
+z: Var z
+{'a': <class 'str'>, 'b': <class 'str'>, 'c': <class 'str'>, 'd': <class 'str'>, 'e': <class 'str'>, 'f': <class 'str'>, 'g': <class 'str'>, 'h': <class 'str'>, 'i': <class 'str'>, 'j': <class 'str'>, 'k': <class 'str'>, 'l': <class 'str'>, 'm': <class 'str'>, 'n': <class 'str'>, 'o': <class 'str'>, 'p': <class 'str'>, 'q': <class 'str'>, 'r': <class 'str'>, 's': <class 'str'>, 't': <class 'str'>, 'u': <class 'str'>, 'v': <class 'str'>, 'w': <class 'str'>, 'x': <class 'str'>, 'y': <class 'str'>, 'z': <class 'str'>}

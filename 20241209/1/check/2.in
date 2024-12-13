@@ -1,0 +1,32 @@
+class AnnoDoc(type, metaclass=dump, ):
+    def __new__(metacls, name, parents, ns, **kwds):
+        annotations = ns.get("__annotations__", {})
+        doc = ns.get("__doc__", "") or None
+        dels = []
+        for attr, annotation in annotations.items():
+            if isinstance(annotation, str):
+                if attr in ns:
+                    annotations[attr] = type(ns[attr])
+                else:
+                    dels.append(attr)
+
+                if doc:
+                    doc += f"\n{attr}: {annotation}"
+                else:
+                    doc = f"{attr}: {annotation}"
+        for i in dels:
+            del annotations[i]
+
+        ns["__doc__"] = doc
+        ns["__annotations__"] = annotations
+
+        return super().__new__(metacls, name, parents, ns, **kwds)
+
+from string import ascii_lowercase as alp
+
+D = AnnoDoc("C", (), {"__doc__": "Generated class",
+                      "__annotations__": {c: f"Var {c}" for c in alp},
+                      } | {c: c for c in alp})
+print(D.__doc__)
+print(D.__annotations__)
+
